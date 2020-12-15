@@ -28,13 +28,7 @@
 }
 
 
-@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation : portrait){
-        
-    }
+
 
 
 
@@ -233,3 +227,57 @@ p{
 #first{
     margin-top: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen 
+    and (max-device-width: 414px) 
+    and (max-device-height: 896px) {
+
+        header{
+            height: 180px;
+        }
+
+        #search-bar{
+            height: 70px;
+        }
+
+        #search-bar input[type='text']{
+            background: none;
+            height: 70px;
+            width: 70px;
+        }
+
+        #search-bar input[type='text']:focus{
+            width: 300px;
+        }
+
+        #logo img{
+            height: 70px;
+            width: 70px;
+        }
+
+        #logo a{
+            display: none;
+        }
+
+        #navigation{
+            padding-right: 60px;
+        }
+
+        #navigation .profile, #navigation .msg, #navigation .noti{
+            height: 70px;
+            width: 70px;
+        }
+    }
