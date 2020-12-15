@@ -119,7 +119,7 @@ header {
 
     color: white;
 
-    transition: all 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
 
     height: 20px;
     width: 25px;
@@ -246,38 +246,38 @@ p{
     and (max-device-height: 896px) {
 
         header{
-            height: 180px;
+            height: 120px;
         }
 
-        #search-bar{
-            height: 70px;
+        #search_bar{
+            padding-left: 40px;
         }
 
-        #search-bar input[type='text']{
-            background: none;
-            height: 70px;
-            width: 70px;
+        #search_bar input[type='text']{
+            height: 50px;
+            width: 50px;
         }
 
-        #search-bar input[type='text']:focus{
-            width: 300px;
+        #search_bar input[type='text']:focus{
+            width: 200px;
+            border-bottom: 3px solid white;
         }
 
         #logo img{
-            height: 70px;
-            width: 70px;
+            height: 60px;
+            width: 60px;
         }
 
         #logo a{
-            display: none;
+            font-size: 50px;
         }
 
         #navigation{
-            padding-right: 60px;
+            padding-right: 40px;
         }
 
         #navigation .profile, #navigation .msg, #navigation .noti{
-            height: 70px;
-            width: 70px;
+            height: 60px;
+            width: 60px;
         }
     }
