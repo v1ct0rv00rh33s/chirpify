@@ -57,6 +57,17 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 header {
     position: fixed;
     top: 0;
@@ -66,10 +77,12 @@ header {
     grid-template-columns: 40% 20% 40%;
 
     color: white;
-    background-color: var(--dark-blue);
+    background: none;
 
     height: 70px;
     width: 100%;
+
+    z-index: 2;
 }
 
 
@@ -111,7 +124,7 @@ header {
 #search_bar input[type='text']{
     font-size: 0;
     
-    border: 1px solid var(--dark-blue);
+    border: 1px solid rgba(0,0,0,0);
     background: url(../img/search.svg) no-repeat;
     border-radius: 0;
 
@@ -178,22 +191,91 @@ header {
 
 
 
-
-
-
-
-h1, p{
-    margin: 0 100px;
+#oxford {
+    background-image: url(../img/front.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    color: white;
 }
 
+#oxford .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#oxford .wrapper .desc{
+    align-self: center;
+    padding-right: 100px;
+    padding-left: 200px;
+}
+
+#oxford .wrapper .signup_form{
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 350px;
+    padding-left: 100px;
+}
+
+#oxford .wrapper .signup_form input[type='text']{
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+
+    padding-left: 20px;
+}
+
+#oxford .wrapper .signup_form input::placeholder{
+    color: rgb(200,200,200);
+}
+
+#oxford .wrapper .signup_form input[type='submit']{
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h1{
-    font-size: 25px;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
 p{
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 20px;
 }
+
+
+
+
+
 
 
 
@@ -254,4 +336,53 @@ p{
             height: 60px;
             width: 60px;
         }
+
+        #oxford .wrapper {
+            grid-template-columns: none;
+            grid-template-rows: 45% 55%;
+        }
+
+        #oxford .wrapper .desc{
+            align-self: end;
+            padding-right: 200px;
+            padding-left: 200px;
+        }
+
+        #oxford .wrapper h1, #oxford .wrapper p{
+            text-align: center;
+        }
+
+        #oxford .wrapper h1{
+            font-size: 90px;
+            margin-bottom: 80px;
+        }
+
+        #oxford .wrapper p{
+            font-size: 40px;
+        }
+
+        #oxford .wrapper .signup_form{
+            align-self: start;
+            padding-right: 250px;
+            padding-left: 250px;
+            padding-top: 100px;
+        }
+
+        #oxford .wrapper .signup_form input[type='text']{
+            height: 70px;
+            padding-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        #oxford .wrapper .signup_form input[type='text']::placeholder{
+            font-size: 30px;
+        }
+
+        #oxford .wrapper .signup_form input[type='submit']{
+            height: 70px;
+            font-size: 30px;
+            
+        }
+        
+        
     }
