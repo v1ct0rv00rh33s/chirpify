@@ -248,6 +248,7 @@ header {
     height: 40px;
     font-size: 15px;
     font-weight: bold;
+    background: white;
 }
 
 
@@ -343,7 +344,7 @@ p{
 
         #oxford .wrapper {
             grid-template-columns: none;
-            grid-template-rows: 40% 60%;
+            grid-template-rows: 35% 65%;
         }
 
         #oxford .wrapper .desc{
@@ -369,7 +370,7 @@ p{
             align-self: start;
             padding-right: 25vw;
             padding-left: 25vw;
-            padding-top: 4vh;
+            padding-top: 6vh;
         }
 
         #oxford .wrapper .signup_form input[type='text']{
@@ -382,7 +383,7 @@ p{
         }
 
         #oxford .wrapper .signup_form input[type='text']::placeholder{
-            font-size: 2vh;
+            font-size: 0;
         }
 
         #oxford .wrapper .signup_form input[type='submit']{
