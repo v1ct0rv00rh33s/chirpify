@@ -343,13 +343,13 @@ p{
 
         #oxford .wrapper {
             grid-template-columns: none;
-            grid-template-rows: 35% 65%;
+            grid-template-rows: 40% 60%;
         }
 
         #oxford .wrapper .desc{
             align-self: end;
-            padding-right: 22vw;
-            padding-left: 22vw;
+            padding-right: 15vw;
+            padding-left: 15vw;
         }
 
         #oxford .wrapper h1, #oxford .wrapper p{
@@ -357,35 +357,37 @@ p{
         }
 
         #oxford .wrapper h1{
-            font-size: 3vh;
+            font-size: 4vh;
             margin-bottom: 3vh;
         }
 
         #oxford .wrapper p{
-            font-size: 1.5vh;
+            font-size: 2vh;
         }
 
         #oxford .wrapper .signup_form{
             align-self: start;
-            padding-right: 30vw;
-            padding-left: 30vw;
-            padding-top: 7vh;
+            padding-right: 25vw;
+            padding-left: 25vw;
+            padding-top: 4vh;
         }
 
         #oxford .wrapper .signup_form input[type='text']{
-            height: 3.5vh;
+            height: 4vh;
             margin-bottom: 2vh;
             text-align: center;
-            padding-top: 2%;
+            
+            padding-left: 0;
+            padding-bottom: 0;
         }
 
         #oxford .wrapper .signup_form input[type='text']::placeholder{
-            font-size: 1.5vh;
+            font-size: 2vh;
         }
 
         #oxford .wrapper .signup_form input[type='submit']{
-            height: 3.5vh;
-            font-size: 1.5vh;
+            height: 4vh;
+            font-size: 2vh;
             
         }
         
