@@ -35,16 +35,9 @@
 
 
 
-
-
-
 :root{
     --dark-blue: rgb(32,30,47);
 }
-
-
-
-
 
 * {
     margin: 0;
@@ -57,6 +50,11 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+
+
+
+
 
 
 header {
@@ -113,18 +111,19 @@ header {
 #search_bar input[type='text']{
     font-size: 0;
     
-    border: none;
+    border: 1px solid var(--dark-blue);
     background: url(../img/search.svg) no-repeat;
     border-radius: 0;
 
     color: white;
 
-    transition: width 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     height: 20px;
     width: 25px;
     
-    z-index: 3;
+    cursor: pointer;
+    
 }
 
 #search_bar input[type='text']:focus{
@@ -133,31 +132,14 @@ header {
     background: none;
     border-bottom: 1px solid white;
     width: 200px;
-    z-index: 1;
+
+    cursor: text;
+    background: url(../img/null.svg) no-repeat;
 }
 
 #search_bar input[type='submit']{
     display: none;
 }
-
-/*
-#search_bar input[type='submit']{
-    border: none;
-    z-index: 2;
-    border-radius: 0;
-
-    background: url(../img/search.svg) no-repeat;
-    background-color: var(--dark-blue);
-    background-position: right;
-    
-    height: 20px;
-    width: 25px;
-
-    font-size: 0;
-
-    cursor: pointer;
-}
-*/
 
 
 
@@ -174,28 +156,20 @@ header {
     padding-right: 30px;
 }
 
-#navigation .profile{
+
+
+#navigation .signup{
+    background: url(../img/signup.svg);
+    width: 25px;
+    height: 25px;
+}
+
+#navigation .login{
     background: url(../img/profile.svg);
     width: 25px;
     height: 25px;
 
     margin-left: 20px;
-}
-
-#navigation .msg{
-    background: url(../img/message.svg);
-    width: 25px;
-    height: 25px;
-
-    margin-left: 20px;
-}
-
-#navigation .noti{
-    background: url(../img/bell.svg);
-    width: 25px;
-    height: 25px;
-
-    margin-left: 17px;
 }
 
 
@@ -246,7 +220,7 @@ p{
     and (max-device-height: 896px) {
 
         header{
-            height: 120px;
+            height: 140px;
         }
 
         #search_bar{
@@ -276,7 +250,7 @@ p{
             padding-right: 40px;
         }
 
-        #navigation .profile, #navigation .msg, #navigation .noti{
+        #navigation .signup, #navigation .login{
             height: 60px;
             width: 60px;
         }
