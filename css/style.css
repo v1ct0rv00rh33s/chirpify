@@ -344,13 +344,13 @@ p{
 
         #oxford .wrapper {
             grid-template-columns: none;
-            grid-template-rows: 35% 65%;
+            grid-template-rows: 40% 60%;
         }
 
         #oxford .wrapper .desc{
             align-self: end;
-            padding-right: 15vw;
-            padding-left: 15vw;
+            padding-right: 19vw;
+            padding-left: 19vw;
         }
 
         #oxford .wrapper h1, #oxford .wrapper p{
@@ -368,9 +368,9 @@ p{
 
         #oxford .wrapper .signup_form{
             align-self: start;
-            padding-right: 25vw;
-            padding-left: 25vw;
-            padding-top: 6vh;
+            padding-right: 27vw;
+            padding-left: 27vw;
+            padding-top: 4vh;
         }
 
         #oxford .wrapper .signup_form input[type='text']{
