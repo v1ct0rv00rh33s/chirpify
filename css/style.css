@@ -2,42 +2,42 @@
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-Regular.ttf');
+    src: url('../fonts/P22UndergroundPro-Regular.woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-Thin.ttf');
+    src: url('../fonts/P22UndergroundPro-Thin.woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-Light.ttf');
+    src: url('../fonts/P22UndergroundPro-Light.woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-SemiBold.ttf');
+    src: url('../fonts/P22UndergroundPro-SemiBold.woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-Bold.ttf');
+    src: url('../fonts/P22UndergroundPro-Bold.woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Underground';
-    src: url('../fonts/P22UndergroundPro-Medium.ttf');
+    src: url('../fonts/P22UndergroundPro-Medium.woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -56,7 +56,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Underground';
+    font-family: 'Underground', Tahoma, sans-serif;
     color: white;
 }
 
@@ -65,19 +65,31 @@ a {
     text-decoration: inherit;
 }
 
-input[type='text'], input[input='submit'] {
-    outline: none;
-}
-
-
-
-
-
-
 body {
     width: 100vw;
     height: 100vh;
 }
+
+
+
+
+
+
+
+header {
+    position: fixed;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 #background {
     background-image: url(../img/front.JPG);
@@ -155,9 +167,11 @@ body {
     text-align: center;
 
     width: 150px;
-    height: 39px;
+    height: 50px;
 
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu .login:hover, #menu .signup:hover {
@@ -195,6 +209,11 @@ body {
     and (max-device-width: 414px) 
     and (max-device-height: 896px) {
 
+        header {
+            padding: 40px;
+            font-size: 40px;
+        }
+
         #logo img{
             height: 150px;
             width: 150px;
@@ -212,7 +231,7 @@ body {
 
         #menu {
             margin-top: 10vh;
-            height: 14vh;
+            height: 16vh;
 
             flex-direction: column;
             align-items: center;
@@ -222,7 +241,7 @@ body {
             font-size: 50px;
 
             width: 30vw;
-            height: 4.9vh;
+            height: 6vh;
         }
 
     }
